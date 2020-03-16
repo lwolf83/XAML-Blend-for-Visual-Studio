@@ -1,0 +1,42 @@
+﻿<Window x:Class="XAML_Blend_for_Visual_Studio.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:XAML_Blend_for_Visual_Studio"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid HorizontalAlignment="Left" Height="399" Margin="10,10,0,0" VerticalAlignment="Top" Width="772">
+            <StackPanel Height="25" VerticalAlignment="Top" Margin="10,0,462,0">
+                <ComboBox x:Name="Filebox" Height="25" Margin="0,0,10,0">
+                    <ComboBox.Background>
+                        <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                            <GradientStop Color="#FFF0F0F0" Offset="0"/>
+                            <GradientStop Color="#FFF10C0C" Offset="1"/>
+                        </LinearGradientBrush>
+                    </ComboBox.Background>
+                    <ComboBoxItem x:Name="File" Content="File" HorizontalAlignment="Left" Width="243.299" IsSelected="True"/>
+                    <ComboBoxItem x:Name="Open" Content="Open" HorizontalAlignment="Left" Width="243.299"/>
+                    <ComboBoxItem x:Name="Save" Content="Save" HorizontalAlignment="Left" Width="243.299"/>
+                    <Separator Style="{StaticResource {x:Static ToolBar.SeparatorStyleKey}}" />
+                    <ComboBoxItem x:Name="Close" Content="Close" HorizontalAlignment="Left" Width="243.299"/>
+                </ComboBox>
+                <ComboBox Height="40" Margin="495,0,22,0"/>
+
+
+            </StackPanel>
+            <StackPanel HorizontalAlignment="Left" Height="25" Margin="410,0,0,0" VerticalAlignment="Top" Width="352">
+                <ComboBox Height="25" Margin="85,0,10,0">
+                    <ComboBoxItem Content="About my boss" HorizontalAlignment="Left" Width="255"/>
+                    <Separator Style="{StaticResource {x:Static ToolBar.SeparatorStyleKey}}" />
+                    <ComboBoxItem Content="Help" HorizontalAlignment="Left" Width="255"/>
+                </ComboBox>
+            </StackPanel>
+            <Grid HorizontalAlignment="Left" Height="325" Margin="20,55,0,0" VerticalAlignment="Top" Width="715">
+                <TextBox HorizontalAlignment="Left" Height="305" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="695"/>
+            </Grid>
+        </Grid>
+
+    </Grid>
+</Window>
